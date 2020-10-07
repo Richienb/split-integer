@@ -1,6 +1,6 @@
 {
 	"name": "split-integer",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Split up an integer into even parts that add to the original integer.",
 	"repository": "https://github.com/Richienb/split-integer.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
