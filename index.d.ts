@@ -10,7 +10,7 @@ declare namespace splitInteger {
 }
 
 /**
-My awesome module.
+Split up an integer into even parts that add to the original integer.
 
 @param number The number to split.
 @param parts The amount of parts to split the number into.
