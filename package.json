@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "split-integer",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Split up an integer into even parts that add to the original integer.",
+	"repository": "https://github.com/Richienb/split-integer.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,7 +17,16 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
+	"keywords": [
+		"split",
+		"integer",
+		"number",
+		"math",
+		"share",
+		"sort",
+		"divvy",
+		"parts"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "^3.13.0",

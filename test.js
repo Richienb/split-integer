@@ -1,13 +1,9 @@
 const test = require("ava")
-const theModule = require(".")
+const splitInteger = require(".")
 
 test("main", t => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number"
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.deepEqual(splitInteger(10, 0), [])
+	t.deepEqual(splitInteger(10, 2), [5, 5])
+	t.deepEqual(splitInteger(10, 3), [4, 3, 3])
+	t.deepEqual(splitInteger(10, 3, { smallestFirst: true }), [3, 3, 4])
 })

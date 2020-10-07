@@ -1,41 +1,53 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# split-integer [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/split-integer/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/split-integer)
 
-My awesome module.
+Split up an integer into even parts that add to the original integer.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/split-integer.png)](https://npmjs.com/package/split-integer)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install split-integer
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module")
+const splitInteger = require("split-integer")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+splitInteger(10, 2)
+//=> [5, 5]
+
+splitInteger(10, 3)
+//=> [4, 3, 3]
+
+splitInteger(10, 3, { smallestFirst: true })
+//=> [3, 3, 4]
 ```
 
 ## API
 
-### theModule(input, options?)
+### splitInteger(number, parts, options?)
 
-#### input
+#### number
 
-Type: `string`
+Type: `number`
 
-Lorem ipsum.
+The number to split.
+
+#### parts
+
+Type: `number`
+
+The amount of parts to split the number into.
 
 #### options
 
 Type: `object`
 
-##### postfix
+##### smallestFirst
 
-Type: `string`\
-Default: `rainbows`
+Type: `boolean`\
+Default: `false`
 
-Lorem ipsum.
+Whether to order the smallest numbers first in the resulting array.
