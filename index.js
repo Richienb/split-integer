@@ -21,6 +21,6 @@ module.exports = (number, parts, { smallestFirst = false } = {}) => {
 	const baseValue = (number - remainder) / parts
 
 	return smallestFirst ?
-		new Array(parts).fill(baseValue).fill(baseValue + 1, parts - remainder, parts) :
+		new Array(parts).fill(baseValue).fill(baseValue + 1, parts - remainder) :
 		new Array(parts).fill(baseValue).fill(baseValue + 1, 0, remainder)
 }
